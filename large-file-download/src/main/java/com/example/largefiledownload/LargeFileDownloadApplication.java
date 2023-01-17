@@ -37,7 +37,7 @@ public class LargeFileDownloadApplication {
 
 	public Flux<DataBuffer> downloadFileUrl(String fileName) throws IOException {
 
-		WebClient webClient = WebClient.create("http://192.168.0.8:8081");
+		WebClient webClient = WebClient.create("http://localhost:8081");
 
 		// Request service to get file data
 		return webClient.get()
